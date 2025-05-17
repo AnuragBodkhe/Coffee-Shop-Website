@@ -17,18 +17,18 @@ To run **Keofi** locally, run this command on your git bash:
 Linux and macOS:
 
 ```bash
-sudo git clone https://github.com/codewithsadee/keofi.git
+sudo git clone https://github.com/AnuragBodkhe/Coffee-Shop-Website.git
 ```
 
 Windows:
 
 ```bash
-git clone https://github.com/codewithsadee/keofi.git
+git clone https://github.com/AnuragBodkhe/Coffee-Shop-Website.git
 ```
 
 ### Contact
 
-If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
+If you want to contact with me you can reach me at [Linkdin]https://www.linkedin.com/in/anurag-bodkhe-087758292/.
 
 ### License
 
