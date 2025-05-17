@@ -1,17 +1,4 @@
-<div align="center">
-  
-  <br />
-  <br />
 
-  <h2 align="center">Keofi - Coffee Website</h2>
-
-  Keofi is a fully responsive coffee website, <br />Responsive for all devices, build using HTML, CSS, and JavaScript.
-
-  <a href="https://codewithsadee.github.io/keofi/"><strong>➥ Live Demo</strong></a>
-
-</div>
-
-<br />
 
 ### Demo Screeshots
 
