@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Keofi - Contact Us</title>
+  <meta name="title" content="Keofi - Contact Us">
+  <meta name="description" content="Get in touch with Keofi Coffee Shop">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merienda&family=Oswald:wght@300;400;500&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    .contact-section {
+      background-color: var(--rich-black-fogra-39);
+      padding: 80px 0;
+    }
+
+    .contact-container {
+      display: grid;
+      gap: 40px;
+    }
+
+    @media (min-width: 768px) {
+      .contact-container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .contact-form-container {
+      background-color: var(--rich-black-fogra-29);
+      padding: 30px;
+      border-radius: var(--radius-5);
+      border: 1px solid var(--camel);
+    }
+
+    .contact-form h2 {
+      color: var(--white);
+      font-family: var(--ff-oswald);
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 2.4rem;
+    }
+
+    .contact-info {
+      color: var(--white);
+    }
+
+    .contact-info h2 {
+      font-family: var(--ff-oswald);
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+      color: var(--white);
+    }
+
+    .contact-info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .contact-info-item ion-icon {
+      font-size: 24px;
+      color: var(--camel);
+      flex-shrink: 0;
+    }
+
+    .contact-info-item .content {
+      flex-grow: 1;
+    }
+
+    .contact-info-item h3 {
+      font-size: 1.8rem;
+      margin-bottom: 5px;
+      color: var(--white);
+    }
+
+    .contact-info-item p,
+    .contact-info-item a {
+      color: var(--white_a60);
+      line-height: 1.6;
+    }
+
+    .contact-info-item a:hover {
+      color: var(--camel);
+    }
+
+    .map-container {
+      margin-top: 40px;
+      border-radius: var(--radius-5);
+      overflow: hidden;
+      height: 300px;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+  <?php include 'header.php'; ?>
+
+  <main>
+    <section class="section contact-section">
+      <div class="container">
+        <h2 class="section-title text-center" id="contact-label">
+          Get In Touch
+        </h2>
+
+        <p class="section-text text-center">
+          We'd love to hear from you! Feel free to reach out with any questions or feedback.
+        </p>
+
+        <div class="contact-container">
+          <div class="contact-info">
+            <h2>Contact Information</h2>
+
+            <div class="contact-info-item">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+              <div class="content">
+                <h3>Our Location</h3>
+                <p>MIT ADT UNIVERSITY PUNE</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+              <div class="content">
+                <h3>Phone Number</h3>
+                <a href="tel:+0123456789">+012 (345) 678 99</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+              <div class="content">
+                <h3>Email Address</h3>
+                <a href="mailto:keofi@gmail.com">keofi@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+              <div class="content">
+                <h3>Working Hours</h3>
+                <p>Sunday - Thursday: 08:00 am - 09:00 pm</p>
+                <p>Friday: 03:00 pm - 09:00 pm</p>
+                <p>Saturday: Closed</p>
+              </div>
+            </div>
+
+            <div class="map-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.5761897254404!2d73.81423491489459!3d18.45809987544752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf40b5bb75a3%3A0x93c2e9a67c95e69d!2sMIT%20ADT%20University!5e0!3m2!1sen!2sin!4v1652345678901!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <form id="contactForm" class="contact-form" action="contact-process.php" method="post">
+              <h2>Send Us A Message</h2>
+
+              <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" name="name" class="form-control" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" name="email" class="form-control" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" name="subject" class="form-control" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Your Message</label>
+                <textarea id="contact-message" name="message" class="form-control" rows="5" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Send Message</button>
+              <div id="contactFormMessage" class="form-message"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+  <?php include 'footer.php'; ?>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Contact form submission with AJAX
+      const contactForm = document.getElementById('contactForm');
+      const contactFormMessage = document.getElementById('contactFormMessage');
+      
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          // Create form data object
+          const formData = new FormData(this);
+          
+          // Send AJAX request
+          fetch('contact.php', {
+            method: 'POST',
+            body: formData
+          })
+          .then(response => response.json())
+          .then(data => {
+            // Display response message
+            contactFormMessage.className = data.success ? 'form-message success' : 'form-message error';
+            contactFormMessage.textContent = data.message;
+            
+            // Reset form if successful
+            if (data.success) {
+              contactForm.reset();
+            }
+          })
+          .catch(error => {
+            contactFormMessage.className = 'form-message error';
+            contactFormMessage.textContent = 'An error occurred. Please try again later.';
+            console.error('Error:', error);
+          });
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
